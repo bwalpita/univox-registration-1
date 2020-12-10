@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "degrees",
+  "info": {
+    "name": "Degree",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
