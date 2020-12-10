@@ -156,6 +156,21 @@
     },
     "email": {
       "type": "email"
+    },
+    "status": {
+      "type": "string"
+    },
+    "application_number": {
+      "type": "string"
+    },
+    "district_of_residence": {
+      "type": "string"
+    },
+    "distance_to_address": {
+      "type": "biginteger"
+    },
+    "distance_work": {
+      "type": "biginteger"
     }
   }
 }
