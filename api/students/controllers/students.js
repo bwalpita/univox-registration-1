@@ -11,9 +11,9 @@ const { sanitizeEntity } = require('strapi-utils');
 module.exports = {
     
     async findOne(ctx) {
-        const { nic_id } = ctx.params;
-    
-        const entity = await strapi.services.students.findOne({ nic_id: nic_id });
+        const { id } = ctx.params;
+
+        const entity = await strapi.services.students.findOne({ nic_no: id });
         return sanitizeEntity(entity, { model: strapi.models.students });
       }
 };
