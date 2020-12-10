@@ -1,0 +1,161 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "name": "Students",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "full_name": {
+      "type": "text"
+    },
+    "initial_name": {
+      "type": "string"
+    },
+    "permanent_address": {
+      "type": "text"
+    },
+    "contact_address": {
+      "type": "text"
+    },
+    "residence_contact": {
+      "type": "biginteger"
+    },
+    "mobile_contact": {
+      "type": "biginteger"
+    },
+    "nic_no": {
+      "type": "text"
+    },
+    "civil_status": {
+      "type": "boolean"
+    },
+    "gender": {
+      "type": "boolean"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "religion": {
+      "type": "string"
+    },
+    "z_index_number": {
+      "type": "string"
+    },
+    "exam_year": {
+      "type": "integer"
+    },
+    "z_score": {
+      "type": "string"
+    },
+    "attempt": {
+      "type": "text"
+    },
+    "stream": {
+      "type": "text"
+    },
+    "sub_1": {
+      "type": "string"
+    },
+    "sub_2": {
+      "type": "string"
+    },
+    "sub_3": {
+      "type": "string"
+    },
+    "sub_4": {
+      "type": "string"
+    },
+    "sub_5": {
+      "type": "string"
+    },
+    "sub_6": {
+      "type": "string"
+    },
+    "grd_1": {
+      "type": "string"
+    },
+    "grd_2": {
+      "type": "string"
+    },
+    "grd_3": {
+      "type": "string"
+    },
+    "grd_4": {
+      "type": "string"
+    },
+    "grd_5": {
+      "type": "string"
+    },
+    "grd_6": {
+      "type": "string"
+    },
+    "institution": {
+      "type": "boolean"
+    },
+    "institution_name": {
+      "type": "text"
+    },
+    "comment": {
+      "type": "text"
+    },
+    "advance_level_certificate": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "nic_card": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "school_leaving_certificate": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "signature": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "degree": {
+      "model": "degree"
+    },
+    "nic_issue_date": {
+      "type": "date"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}
