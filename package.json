@@ -21,7 +21,8 @@
     "strapi-plugin-upload": "3.3.2",
     "strapi-connector-bookshelf": "3.3.2",
     "knex": "<0.20.0",
-    "mysql": "latest"
+    "mysql": "latest",
+    "nodemailer": "^6.4.17"
   },
   "author": {
     "name": "A Strapi developer"
