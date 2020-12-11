@@ -37,8 +37,8 @@ module.exports = {
     // email transpoter
     let transporter = nodemailer.createTransport({
       host: "mail.privateemail.com",
-      port: 587,
-      secure: false, // true for 465, false for other ports
+      port: 465,
+      secure: true, // true for 465, false for other ports
       auth: {
         user: 'no-reply@univox.site',
         pass: 'Fr8yc9R96DujeYw',
